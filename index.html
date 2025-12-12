@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arix Signature Tree</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pinyon+Script&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              arix: {
+                black: '#000502', // Deepest Black Green
+                emerald: '#003311', // Rich Emerald
+                red: '#660011', // Deep Red
+                gold: '#FFD700', // Bright Gold
+                silver: '#E0E0E0',
+                accent: '#C5A059'
+              }
+            },
+            fontFamily: {
+              script: ['"Pinyon Script"', 'cursive'],
+              serif: ['"Playfair Display"', 'serif'],
+              display: ['"Cinzel"', 'serif'],
+            },
+            animation: {
+              'shine': 'shine 3s linear infinite',
+            },
+            keyframes: {
+              shine: {
+                '0%': { backgroundPosition: '200% center' },
+                '100%': { backgroundPosition: '-200% center' },
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body, html { margin: 0; padding: 0; height: 100%; overflow: hidden; background-color: #000502; }
+      #root { height: 100%; width: 100%; }
+      
+      /* Liquid Gold Text Effect */
+      .text-liquid-gold {
+        background: linear-gradient(
+          90deg,
+          #AA771C 0%,
+          #FFD700 25%,
+          #FFFACD 50%,
+          #FFD700 75%,
+          #AA771C 100%
+        );
+        background-size: 200% auto;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: shine 4s linear infinite;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "@react-three/fiber": "https://esm.sh/@react-three/fiber@^9.4.2",
+    "@react-three/drei": "https://esm.sh/@react-three/drei@^10.7.7",
+    "three": "https://esm.sh/three@^0.182.0",
+    "@react-three/postprocessing": "https://esm.sh/@react-three/postprocessing@^3.0.4",
+    "@mediapipe/tasks-vision": "https://esm.sh/@mediapipe/tasks-vision@0.10.8"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>

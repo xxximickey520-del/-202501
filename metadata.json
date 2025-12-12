@@ -1,0 +1,7 @@
+{
+  "name": "Arix Signature Christmas Tree - Ultra Luxury",
+  "description": "An ultra-luxury, high-fidelity 3D Christmas experience featuring a morphing particle tree, hand-tracking interaction, and cinematic emerald/gold aesthetics.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
